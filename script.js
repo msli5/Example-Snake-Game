@@ -55,7 +55,7 @@ function draw() {
   textFont("'Playfair Display', serif")
   text(`Your score is ${score}`, width/2, 50)
   //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
-if(collideRectCircle(moveX,moveY,40,15,circleX,circleY,25)){
+if(collideRectCircle(moveX,moveY,snakeLength,15,circleX,circleY,25)){
   //move circle to another location
   circleX=random(25,width-25);
   circleY=random(25,height-25);
